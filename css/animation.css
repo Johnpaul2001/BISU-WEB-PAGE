@@ -1,0 +1,79 @@
+
+.animate-pic{
+    animation: zoomin 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.animate-live{
+    animation: moveright 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.animate-click{
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+@keyframes moveleft{
+    0%{
+        transform: translateX(100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+@keyframes moveup{
+    0%{
+        transform: translateY(100px) rotate(-90deg);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0px) rotate(-90deg);
+        visibility: visible;
+    }
+}
+@keyframes App-logo-spin {
+    from {
+      transform: rotateY(0deg);
+      visibility: visible;
+    }
+    to {
+      transform: rotateY(-360deg);
+      visibility: visible;
+    }
+  }
